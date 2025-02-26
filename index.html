@@ -1,37 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lista de Tarefas</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="container">
-        <h1>Lista de Tarefas</h1>
-        <div class="prioridade">
-            Prioridade:
-            <div>
-                <input type="radio" name="prioridade" id="idalta"><label for="idalta">Alta</label>
-            </div>
-            <div>
-                <input type="radio" name="prioridade" id="idmedia" checked><label for="idmedia">Média</label>
-            </div>
-            <div>
-                <input type="radio" name="prioridade" id="idbaixa"><label for="idbaixa">Baixa</label>
-            </div>
-            
+      <h1>Lista de Tarefas</h1>
+      <div class="prioridade">
+        Prioridade:
+        <div>
+          <input type="radio" name="prioridade" id="idalta" /><label
+            for="idalta"
+            >Alta</label
+          >
         </div>
-        <div class="input">
-            <input id="taskInput" type="text" placeholder="Digite sua tarefa" />
-        
-            <button id="addTaskBtn">Adicionar</button>
+        <div>
+          <input type="radio" name="prioridade" id="idmedia" checked /><label
+            for="idmedia"
+            >Média</label
+          >
         </div>
-        
-        <div id="taskList">
+        <div>
+          <input type="radio" name="prioridade" id="idbaixa" /><label
+            for="idbaixa"
+            >Baixa</label
+          >
+        </div>
+      </div>
+      <div class="input">
+        <input id="taskInput" type="text" placeholder="Digite sua tarefa" autocomplete="off"/>
 
-        </div>
+        <button id="addTaskBtn">Adicionar</button>
+      </div>
+
+      <div id="taskList"></div>
     </div>
     <script src="engine.js"></script>
-</body>
+  </body>
 </html>
